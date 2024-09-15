@@ -1,14 +1,25 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<div class="col-mb-12 col-offset-1 col-3 kit-hidden-tb" id="secondary" role="complementary">
-    <!-- <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)) : ?>
+<div class="sidebar" id="secondary" role="complementary">
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)) : ?>
         <section class="widget">
             <h3 class="widget-title"><?php _e('最新文章'); ?></h3>
-            <ul class="widget-list">
-                <?php \Widget\Contents\Post\Recent::alloc()
-                    ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
+            <ul class="widget-list widget-post-list">
+                <?php while (\Widget\Contents\Post\Recent::alloc()
+                    ->next()
+                ) :
+                    $post = \Widget\Contents\Post\Recent::alloc();
+                ?>
+                    <a class="post come-out-animation" href="<?php \Widget\Contents\Post\Recent::alloc()->permalink(); ?>">
+                        <div class="image" style="background-image: url(<?php echo getPostImg($post); ?>);"></div>
+                        <div class="info">
+                            <h4 class="post-title"><?php \Widget\Contents\Post\Recent::alloc()->title(); ?></h4>
+                            <time datetime="<?php \Widget\Contents\Post\Recent::alloc()->date('c'); ?>"><?php \Widget\Contents\Post\Recent::alloc()->date(); ?></time>
+                        </div>
+                    </a>
+                <?php endwhile; ?>
             </ul>
         </section>
-    <?php endif; ?> -->
+    <?php endif; ?>
 
     <!-- <?php if (!empty($this->options->sidebarBlock) && in_array('ShowCategory', $this->options->sidebarBlock)) : ?>
         <section class="widget">
