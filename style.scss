@@ -614,13 +614,14 @@ textarea {
 
       @media (min-width: 700px) {
         p {
+          max-width: 80%;
           margin: 0.5em auto;
         }
 
         img {
-          width: 100%;
-          max-width: 100%;
-          margin: 10rem auto;
+          width: 110%;
+          max-width: 110%;
+          margin: 10rem auto 10rem -5%;
           border-radius: min(4vw, 16rem);
         }
       }
