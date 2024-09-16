@@ -18,6 +18,9 @@ $this->need('header.php');
         <a href="<?php $this->permalink() ?>" class="post item come-out-animation" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="image" style="background-image: url(<?php echo getPostImg($this); ?>);"></div>
             <div class="info">
+                <div class="category">
+                    <?php $this->category(', ', false); ?>
+                </div>
                 <h2 class="post-title" itemprop="name headline">
                     <?php $this->title() ?>
                 </h2>

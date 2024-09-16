@@ -463,11 +463,19 @@ textarea {
       padding: 8rem 10rem;
       line-height: 1.3;
 
+      .category {
+        font-size: 0.9em;
+        font-weight: 500;
+        color: var(--color-meta);
+        margin-bottom: 5rem;
+      }
+
       .post-title {
         margin: 0;
         color: var(--color-text);
         font-weight: 600;
         font-size: 1.2em;
+        flex-grow: 1;
       }
 
       time {
@@ -490,7 +498,7 @@ textarea {
       grid-column-start: span 2;
 
       .info {
-        padding: 16rem 10rem;
+        padding: 8rem 10rem;
 
         .post-title {
           font-size: 1.6em;
@@ -518,7 +526,7 @@ textarea {
       }
 
       .info {
-        padding: 30rem 20rem;
+        padding: 24rem 20rem;
 
         .post-title {
           font-size: 2em;
@@ -539,7 +547,7 @@ textarea {
       grid-column-start: span 3;
 
       .info {
-        padding: 15rem 10rem;
+        padding: 10rem 10rem 13rem 10rem;
 
         .post-title {
           font-size: 1.6em;
@@ -588,10 +596,7 @@ textarea {
       color: var(--color-meta);
       font-size: 1.01em;
       margin: 6rem 0 18rem 0;
-
-      li::marker {
-        content: '';
-      }
+      list-style: none;
 
       li:not(:last-child) {
         margin-right: 10rem;
