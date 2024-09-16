@@ -29,7 +29,7 @@
         <div class="container">
             <div class="site-name">
                 <?php if ($this->options->logoUrl) : ?>
-                    <a id="logo" href="<?php $this->options->siteUrl(); ?>">
+                    <a id="logo" href="<?php $this->options->siteUrl(); ?>" tabindex="-1">
                         <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
                     </a>
                 <?php endif; ?>
@@ -61,10 +61,10 @@
                 <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
                     <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
                     <input type="text" id="s" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
-                    <button type="submit" class="submit">
-                        <?php
-                        // _e('搜索'); 
-                        ?>
+                    <button type="submit" class="submit" aria-label="<?php _e('搜索'); ?>">
+                        <svg t="1726497330077" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1637">
+                            <path d="M661.44 597.44h-33.92l-11.84-11.52a277.76 277.76 0 1 0-29.76 29.76l11.52 11.84v33.6l213.44 212.8 64-64z m-256 0a192 192 0 1 1 192-192 192 192 0 0 1-192 192z" p-id="1638"></path>
+                        </svg>
                     </button>
                 </form>
             </div>

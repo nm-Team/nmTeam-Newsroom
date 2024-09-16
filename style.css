@@ -360,13 +360,22 @@ textarea textarea {
 }
 #header #search button {
   position: absolute;
-  right: 4rem;
+  right: 0rem;
   top: 2rem;
   border: none;
+  border-radius: 3rem;
+  outline-offset: -1rem;
   padding: 0;
-  width: 18rem;
-  height: 18rem;
+  width: 23rem;
+  height: 23rem;
+  cursor: pointer;
   background: none;
+}
+#header #search button svg {
+  width: 12rem;
+  height: 12rem;
+  fill: var(--color-text);
+  opacity: 0.7;
 }
 
 /* ------------------
