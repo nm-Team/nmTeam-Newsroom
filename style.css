@@ -28,7 +28,6 @@
   --color-comment-even: #ffffff;
   --color-comment-author: #444444;
   --color-comment-author-bg: #FFF9E8;
-  --color-error-page-margin: 100rem;
   --color-navigator-bg: #eeeeee;
   --color-border: #eeeeee;
   --color-article-background: #ffffff;
@@ -62,7 +61,6 @@
     --color-comment-even: #333333;
     --color-comment-author: #ffffff;
     --color-comment-author-bg: #444444;
-    --color-error-page-margin: 100rem;
     --color-navigator-bg: #444444;
     --color-border: #444444;
     --color-article-background: #141414;
@@ -185,7 +183,6 @@ textarea textarea {
   overflow: hidden;
   /* Navigation menu */
   /* Mobile menu */
-  /* Search */
 }
 #header[data-nav-menu-extended=true] {
   max-height: 100%;
@@ -344,11 +341,13 @@ textarea textarea {
 #header .extend-menu #extend-nav-menu a .current {
   color: var(--color-header-nav-link-active);
 }
-#header #search {
+
+/* Search */
+.search-box {
   position: relative;
   margin-top: 15rem;
 }
-#header #search input {
+.search-box input {
   width: 100%;
   color: var(--color-text);
   background: var(--color-search-box-background);
@@ -358,7 +357,7 @@ textarea textarea {
   font-size: 1.01em;
   outline-offset: -1rem;
 }
-#header #search button {
+.search-box button {
   position: absolute;
   right: 0rem;
   top: 2rem;
@@ -371,7 +370,7 @@ textarea textarea {
   cursor: pointer;
   background: none;
 }
-#header #search button svg {
+.search-box button svg {
   width: 12rem;
   height: 12rem;
   fill: var(--color-text);
@@ -806,8 +805,21 @@ textarea textarea {
  * Error page
  * -------------- */
 .error-page {
-  margin-top: var(--color-error-page-margin);
-  margin-bottom: var(--color-error-page-margin);
+  margin: 60rem 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.error-page .title {
+  font-size: 2em;
+  margin: 0;
+}
+.error-page img {
+  width: 100%;
+  max-width: 400rem;
+  margin: 0;
 }
 
 /* -----------------

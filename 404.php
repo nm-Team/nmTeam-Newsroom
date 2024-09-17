@@ -11,17 +11,19 @@ if (preg_match('/\/news\/(.+?)\/(.+?)$/', $_SERVER['REQUEST_URI'], $matches)) {
 }
 ?>
 
-<div class="col-mb-12 col-tb-8 col-tb-offset-2">
-    <div class="error-page">
-        <h2 class="post-title">404 - <?php _e('页面没找到'); ?></h2>
-        <p><?php _e('你想查看的页面已被转移或删除了, 要不要搜索看看: '); ?></p>
-        <form method="post">
-            <p><input type="text" name="s" class="text" autofocus /></p>
-            <p>
-                <button type="submit" class="submit"><?php _e('搜索'); ?></button>
-            </p>
-        </form>
-    </div>
-
+<div class="error-page">
+    <h2 class="title"><?php _e('找不到页面'); ?></h2>
+    <p>
+        <img src="<?php $this->options->themeUrl('img/404.png'); ?>" alt="404" />
+    </p>
+    <form method="post" class="search-box">
+        <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
+        <input type="text" name="s" class="text" autofocus placeholder="<?php _e('输入关键字搜索'); ?>" />
+        <button type="submit" class="submit">
+            <svg t="1726497330077" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1637">
+                <path d="M661.44 597.44h-33.92l-11.84-11.52a277.76 277.76 0 1 0-29.76 29.76l11.52 11.84v33.6l213.44 212.8 64-64z m-256 0a192 192 0 1 1 192-192 192 192 0 0 1-192 192z" p-id="1638"></path>
+            </svg>
+        </button>
+    </form>
 </div><!-- end #content-->
 <?php $this->need('footer.php'); ?>

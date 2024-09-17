@@ -28,7 +28,6 @@
   --color-comment-even: #ffffff;
   --color-comment-author: #444444;
   --color-comment-author-bg: #FFF9E8;
-  --color-error-page-margin: 100rem;
   --color-navigator-bg: #eeeeee;
   --color-border: #eeeeee;
   --color-article-background: #ffffff;
@@ -63,7 +62,6 @@
     --color-comment-even: #333333;
     --color-comment-author: #ffffff;
     --color-comment-author-bg: #444444;
-    --color-error-page-margin: 100rem;
     --color-navigator-bg: #444444;
     --color-border: #444444;
     --color-article-background: #141414;
@@ -369,45 +367,46 @@ textarea {
       }
     }
   }
+}
 
-  /* Search */
-  #search {
-    position: relative;
-    margin-top: 15rem;
+/* Search */
+.search-box {
+  position: relative;
+  margin-top: 15rem;
 
-    input {
-      width: 100%;
-      color: var(--color-text);
-      background: var(--color-search-box-background);
-      padding: 7rem 30rem 7rem 7rem;
-      border-radius: 4rem;
-      border: none;
-      font-size: 1.01em;
-      outline-offset: -1rem;
-    }
+  input {
+    width: 100%;
+    color: var(--color-text);
+    background: var(--color-search-box-background);
+    padding: 7rem 30rem 7rem 7rem;
+    border-radius: 4rem;
+    border: none;
+    font-size: 1.01em;
+    outline-offset: -1rem;
+  }
 
-    button {
-      position: absolute;
-      right: 0rem;
-      top: 2rem;
-      border: none;
-      border-radius: 3rem;
-      outline-offset: -1rem;
-      padding: 0;
-      width: 23rem;
-      height: 23rem;
-      cursor: pointer;
-      background: none;
+  button {
+    position: absolute;
+    right: 0rem;
+    top: 2rem;
+    border: none;
+    border-radius: 3rem;
+    outline-offset: -1rem;
+    padding: 0;
+    width: 23rem;
+    height: 23rem;
+    cursor: pointer;
+    background: none;
 
-      svg {
-        width: 12rem;
-        height: 12rem;
-        fill: var(--color-text);
-        opacity: 0.7;
-      }
+    svg {
+      width: 12rem;
+      height: 12rem;
+      fill: var(--color-text);
+      opacity: 0.7;
     }
   }
 }
+
 
 /* ------------------
  * Main
@@ -887,8 +886,23 @@ textarea {
  * Error page
  * -------------- */
 .error-page {
-  margin-top: var(--color-error-page-margin);
-  margin-bottom: var(--color-error-page-margin);
+  margin: 60rem 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    max-width: 400rem;
+    margin: 0;
+  }
 }
 
 /* -----------------
