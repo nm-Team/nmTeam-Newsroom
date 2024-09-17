@@ -641,12 +641,15 @@ textarea {
       }
 
       @media (min-width: 700px) {
-        p {
+
+        p,
+        li {
           max-width: 80%;
           margin: 0.5em auto;
         }
 
-        img {
+        img,
+        video {
           width: 110%;
           max-width: 110%;
           margin: 10rem auto 10rem -5%;
