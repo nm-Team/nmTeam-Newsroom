@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div class="sidebar" id="secondary" role="complementary">
-    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)) : ?>
+    <?php if (!$this->is('index') && !empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)) : ?>
         <section class="widget">
             <h3 class="widget-title"><?php _e('最新文章'); ?></h3>
             <ul class="widget-list widget-post-list">
