@@ -25,6 +25,7 @@
 </head>
 
 <body data-nav-menu-extended="false">
+    <a href="#body" class="skip-to-content" role="navigation" aria-label="<?php _e('跳到内容'); ?>"><?php _e('跳到内容'); ?></a>
     <header id="header" class="clearfix" data-nav-menu-extended="false">
         <div class="container">
             <div class="site-name">
