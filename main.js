@@ -6,6 +6,10 @@ function toggleHeader(to = undefined) {
     $('[data-nav-menu-extended]').attr('data-nav-menu-extended', to);
 }
 
+function toggleSidebarCategory() {
+    $('.sidebar').toggleClass('show-hidden');
+}
+
 // Play animation on visible
 const targetElements = document.querySelectorAll('.come-out-animation');
 

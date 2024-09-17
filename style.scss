@@ -791,7 +791,11 @@ textarea {
 .widget {
   max-width: 620rem;
   margin: auto;
-  padding: 20rem 20rem;
+  padding: 6rem 20rem;
+
+  &.sidebar-hidden {
+    display: none;
+  }
 
   .widget-title {
     padding: 0;
@@ -869,6 +873,16 @@ textarea {
     @media (min-width: 900px) {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+}
+
+.sidebar {
+  &.show-hidden .sidebar-hidden {
+    display: block;
+  }
+
+  &.show-hidden .sidebar-show {
+    display: none;
   }
 }
 

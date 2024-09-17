@@ -719,7 +719,10 @@ textarea textarea {
 .widget {
   max-width: 620rem;
   margin: auto;
-  padding: 20rem 20rem;
+  padding: 6rem 20rem;
+}
+.widget.sidebar-hidden {
+  display: none;
 }
 .widget .widget-title {
   padding: 0;
@@ -789,6 +792,13 @@ textarea textarea {
   .widget .widget-post-list {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.sidebar.show-hidden .sidebar-hidden {
+  display: block;
+}
+.sidebar.show-hidden .sidebar-show {
+  display: none;
 }
 
 /* ------------------
