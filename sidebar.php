@@ -13,7 +13,9 @@
                         <div class="image" style="background-image: url(<?php echo getPostImg($post); ?>);"></div>
                         <div class="info">
                             <h4 class="post-title"><?php \Widget\Contents\Post\Recent::alloc()->title(); ?></h4>
-                            <time datetime="<?php \Widget\Contents\Post\Recent::alloc()->date('c'); ?>"><?php \Widget\Contents\Post\Recent::alloc()->date(); ?></time>
+                            <div class="other">
+                                <span class="category"><?php \Widget\Contents\Post\Recent::alloc()->category(', ', false, false); ?></span><time datetime="<?php \Widget\Contents\Post\Recent::alloc()->date('c'); ?>"><?php \Widget\Contents\Post\Recent::alloc()->date(); ?></time>
+                            </div>
                         </div>
                     </a>
                 <?php endwhile; ?>

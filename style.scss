@@ -887,11 +887,16 @@ textarea {
           font-size: 0.99em;
         }
 
-        time {
+        .other {
           font-size: 0.69em;
           color: var(--color-gray);
           margin-top: 5rem;
           font-weight: 400;
+
+          .category:not(:empty)::after {
+            content: '•';
+            margin: 0 0.1em;
+          }
         }
       }
     }

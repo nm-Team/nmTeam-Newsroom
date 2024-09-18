@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ------------------
  * Global style
  * --------------- */
@@ -806,11 +807,15 @@ textarea textarea {
   font-weight: 600;
   font-size: 0.99em;
 }
-.widget .widget-post-list .post .info time {
+.widget .widget-post-list .post .info .other {
   font-size: 0.69em;
   color: var(--color-gray);
   margin-top: 5rem;
   font-weight: 400;
+}
+.widget .widget-post-list .post .info .other .category:not(:empty)::after {
+  content: "•";
+  margin: 0 0.1em;
 }
 @media (min-width: 900px) {
   .widget .widget-post-list {
