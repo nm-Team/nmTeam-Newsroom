@@ -27,6 +27,17 @@ function themeConfig($form)
     );
 
     $form->addInput($sidebarBlock->multiMode());
+
+    // Google Analytics
+    $googleAnalytics = new \Typecho\Widget\Helper\Form\Element\Textarea(
+        'googleAnalytics',
+        null,
+        null,
+        _t('Google Analytics'),
+        _t('填入你的 Google Analytics 跟踪 ID')
+    );
+
+    $form->addInput($googleAnalytics);
 }
 
 // Post header image
