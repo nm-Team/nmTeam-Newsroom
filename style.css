@@ -616,11 +616,11 @@ textarea textarea {
 @media (min-width: 1200px) {
   .post-page {
     background: none;
-    padding: 10rem calc(5vw - 7rem);
+    padding: 10rem calc(5vw - 9rem);
   }
   .post-page .post {
     background-color: var(--color-article-background);
-    padding: 10rem 8rem 20rem 8rem;
+    padding: 10rem 10rem 20rem 10rem;
   }
 }
 

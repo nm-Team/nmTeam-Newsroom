@@ -670,11 +670,11 @@ textarea {
 
   @media (min-width: 1200px) {
     background: none;
-    padding: calc(20rem - 10rem) calc(5vw - 7rem);
+    padding: calc(20rem - 10rem) calc(5vw - 9rem);
 
     .post {
       background-color: var(--color-article-background);
-      padding: 10rem 8rem 20rem 8rem;
+      padding: 10rem 10rem 20rem 10rem;
     }
   }
 }
