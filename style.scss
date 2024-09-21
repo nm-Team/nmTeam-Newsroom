@@ -643,7 +643,8 @@ textarea {
       @media (min-width: 700px) {
 
         p,
-        li {
+        li,
+        pre {
           max-width: 80%;
           margin: 0.5em auto;
         }

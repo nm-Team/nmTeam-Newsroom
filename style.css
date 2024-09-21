@@ -592,7 +592,8 @@ textarea textarea {
 }
 @media (min-width: 700px) {
   .post-page .post .post-content p,
-  .post-page .post .post-content li {
+  .post-page .post .post-content li,
+  .post-page .post .post-content pre {
     max-width: 80%;
     margin: 0.5em auto;
   }
