@@ -37,6 +37,9 @@
         </script>
     <?php endif; ?>
 
+    <!-- ie -->
+    <script src="https://websiteres.nmteam.xyz/ie/ie.js" async></script>
+
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
