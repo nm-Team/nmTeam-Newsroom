@@ -597,6 +597,14 @@ textarea textarea {
     max-width: 80%;
     margin: 0.5em auto;
   }
+  .post-page .post .post-content h2,
+  .post-page .post .post-content h3,
+  .post-page .post .post-content h4,
+  .post-page .post .post-content h5,
+  .post-page .post .post-content h6 {
+    max-width: 80%;
+    margin: 0.5em auto;
+  }
   .post-page .post .post-content img,
   .post-page .post .post-content video {
     width: 110%;
